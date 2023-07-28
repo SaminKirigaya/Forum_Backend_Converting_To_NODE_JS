@@ -33,6 +33,9 @@ The forum that we created for client with Laravel is converted to Node js accord
 
 
 - change this datas according to your server configuration.
+- Forum.sql and Forum(1).sql are added for database importing ...
+  Both files are same it's just one is quick compressed ....
+  Enjoy !!!
 
 ## Optimizations
 
