@@ -29,6 +29,7 @@ The forum that we created for client with Laravel is converted to Node js accord
       pass: 'the smtp mail pass',
     },
   });
+- Located in SendMail.js file
 
 
 - change this datas according to your server configuration.
