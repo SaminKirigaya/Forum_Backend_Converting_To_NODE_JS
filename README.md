@@ -13,22 +13,22 @@ The forum that we created for client with Laravel is converted to Node js accord
 - 
 ## Run Locally 
 
-PORT = 8000
-Imgpath = http://localhost:8000
-Host = localhost
-User = root
-Pass = 
-DB = forum
+- PORT = 8000
+- Imgpath = http://localhost:8000
+- Host = localhost
+- User = root
+- Pass = 
+- DB = forum
 
-SMTP_MAIL = 
-SMTP_PASS = 
+- SMTP_MAIL = 
+- SMTP_PASS = 
 
-change this datas according to your server configuration.
+- change this datas according to your server configuration.
 
 ## Optimizations
 
-Added more responsive view for different displays.
-Made carousel effect optimized with respect to the device dislay change.
+- Added more responsive view for different displays.
+- Made carousel effect optimized with respect to the device dislay change.
 
 
 ## All Routes 
