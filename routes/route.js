@@ -26,6 +26,17 @@ const PostEditSub = require('../RoutFunction/PostEditSub');
 const MyPostDelete = require('../RoutFunction/MyPostDelete');
 const Comment = require('../RoutFunction/Comment');
 const MyCommentedPost = require('../RoutFunction/MyCommentedPost');
+const PostLike = require('../RoutFunction/PostLike');
+const PostDislike = require('../RoutFunction/PostDislike');
+const CommentLike = require('../RoutFunction/CommentLike');
+const CommentDislike = require('../RoutFunction/CommentDislike');
+const MyPostComDel = require('../RoutFunction/MyPostComDel');
+const DelMyCom = require('../RoutFunction/DelMyCom');
+const AdminDelComs = require('../RoutFunction/AdminDelComs');
+const Report = require('../RoutFunction/Report');
+const Notification = require('../RoutFunction/Notification');
+const DelNotification = require('../RoutFunction/DelNotification');
+const SeeOther = require('../RoutFunction/SeeOther');
 
 //remove later .....................................
 
@@ -146,6 +157,74 @@ Comment
 router.get('/mycommentedPost/:usersl',
 Authentication,
 MyCommentedPost
+)
+
+//Post Like 
+router.get('/postlike/:usersl/:postno',
+Authentication,
+PostLike
+)
+
+//Post DisLike 
+router.get('/postdislike/:usersl/:postno',
+Authentication,
+PostDislike
+)
+
+//Comment Like
+router.get('/comlike/:usersl/:postno',
+Authentication,
+CommentLike
+) // postno means comment no
+
+//Comment Like
+router.get('/comdislike/:usersl/:postno',
+Authentication,
+CommentDislike
+) // postno means comment no
+
+
+//Own com delete
+router.get('/mypostcomdel/:usersl/:comntno',
+Authentication,
+MyPostComDel
+)
+
+
+//own coms delete bug fix 
+router.get('/delmycom/:usersl/:comno',
+Authentication,
+DelMyCom
+)
+
+//Own post all coms delete authority
+router.get('/admindeletecoms/:usersl/:postno/:comno',
+Authentication,
+AdminDelComs
+)
+
+//report 
+router.get('/report/:usersl/:postno',
+Authentication,
+Report
+)
+
+//show notif
+router.get('/notification/:usersl',
+Authentication,
+Notification
+)
+
+//del notification
+router.get('/delnotif/:usersl/:highestsl',
+Authentication,
+DelNotification
+)
+
+//see other users
+router.get('/seeother/:usersl/:mail',
+Authentication,
+SeeOther
 )
 
 module.exports = router;
