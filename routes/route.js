@@ -37,6 +37,8 @@ const Report = require('../RoutFunction/Report');
 const Notification = require('../RoutFunction/Notification');
 const DelNotification = require('../RoutFunction/DelNotification');
 const SeeOther = require('../RoutFunction/SeeOther');
+const SendMail = require('../RoutFunction/SendMail')
+
 
 //remove later .....................................
 
@@ -226,5 +228,12 @@ router.get('/seeother/:usersl/:mail',
 Authentication,
 SeeOther
 )
+
+//send mail to change pass
+router.post('/forgotpass',
+SendMail)
+
+
+
 
 module.exports = router;
