@@ -20,8 +20,16 @@ The forum that we created for client with Laravel is converted to Node js accord
 - Pass = 
 - DB = forum
 
-- SMTP_MAIL = 
-- SMTP_PASS = 
+-   const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false, // Set to true if you're using port 465 with SSL/TLS
+    auth: {
+      user: 'Your smtp mail@gmail.com',
+      pass: 'the smtp mail pass',
+    },
+  });
+
 
 - change this datas according to your server configuration.
 
