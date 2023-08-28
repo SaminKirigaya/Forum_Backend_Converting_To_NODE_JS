@@ -13,12 +13,16 @@ The forum that we created for client with Laravel is converted to Node js accord
 - 
 ## Run Locally 
 
+Remember Inside .env file 
+
 - PORT = 8000
 - Imgpath = http://localhost:8000
 - Host = localhost
 - User = root
 - Pass = 
 - DB = forum
+
+- And Some Js File Are Using Transporter Which You Will Find At Rout Functions ... There Change auth -> user : -> pass : 
 
 -   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
